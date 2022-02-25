@@ -1,5 +1,5 @@
 /**
- * Copyright 
+ * Copyright  2022
  * OntoChem GmbH (main office)
  * Blücherstrasse 24
  * 06120 Halle (Saale)

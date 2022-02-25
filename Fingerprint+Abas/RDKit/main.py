@@ -1,5 +1,5 @@
-#*
-# Copyright 
+#
+# Copyright 2022
 # OntoChem GmbH (main office)
 # Blücherstrasse 24
 # 06120 Halle (Saale)
@@ -17,7 +17,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-#*
+#
 from rdkit import Chem
 from rdkit import RDLogger
 from classifier import classify
