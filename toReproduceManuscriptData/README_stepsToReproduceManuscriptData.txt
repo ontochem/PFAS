@@ -34,7 +34,7 @@ git clone https://github.com/ontochem/PFAS.git
 ##################################
 // STEP 2:  create lucene index
 ##################################
-cd Fingerprint+Abas/OCL_CDK/ChemistrySearchCLI
+cd PFAS/Fingerprint+Abas/OCL_CDK/ChemistrySearchCLI
 the external libraries necessary for compiling the java code is mentioned in the Manifest.txt
 compile and execute the java program using the exe.sh bash script
 
@@ -47,7 +47,7 @@ time /usr/lib64/jvm/java-11-openjdk-11/bin/java -jar build.jar -read_Module Ocl 
 ##################################
 // STEP 3: search lucene index
 ##################################
-cd Fingerprint+Abas/OCL_CDK/ChemistrySearchAPI
+cd PFAS/Fingerprint+Abas/OCL_CDK/ChemistrySearchAPI
 the external libraries necessary for compiling the java code is mentioned in the Manifest.txt
 compile and execute the java program using the exe.sh bash script
 
@@ -109,7 +109,7 @@ RDKit 3,502
 ##################################
 STEP 1: set the rdkit environment and execute the code. Edit the main.py to read the smiles-set.csv. Edit the appropriate smarts query in the main.py
 ##################################
-cd Fingerprint+Abas/RDKit
+cd PFAS/Fingerprint+Abas/RDKit
 conda activate my-rdkit-env
 python main.py > output.txt 
 
