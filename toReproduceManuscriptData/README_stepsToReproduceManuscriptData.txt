@@ -4,8 +4,8 @@
 #######################################################################################
 #######################################################################################
 The input files (smarts-set.txt, smiles-set.csv) to reproduce part of the table 4 are placed in the folder named "toReproduceManuscriptData/input"
-1. PFAS hits from the 818,280 compound (CORE) dataset is saved as smiles-set.csv
-2. smarts definition:  C(F)(F), C(F)(F)C(F), C(*)(F)(F)C(F)(*)(*) is saved as smarts-set.txt
+1. the 818,280 compound (CORE) dataset: is saved as smiles-set.csv
+2. smarts definition used in the manuscript:  is saved as smarts-set.txt
 
 #######################################################################################
 #######################################################################################
@@ -52,16 +52,15 @@ the external libraries necessary for compiling the java code is mentioned in the
 compile and execute the java program using the exe.sh bash script
 
 for example: to reproduce the table 4 values for definition A,B and C using Chemistry Development Kit (CDK), edit the exe.sh script and choose the right module as shown below. Edit the smarts-set.txt with the definition mentioned in the paper or as above
-
 time /usr/lib64/jvm/java-11-openjdk-11/bin/java -jar build.jar -read_Module Cdk -read_Smarts smarts-set.txt  -write_Output output.txt -read_IndexDirectory ../ChemistrySearchCLI/indexDirectory_Cdk
 
 for example: to reproduce the table 4 values for definition A,B and C using OpenChemLib (OCL), edit the exe.sh script and choose the right module as shown below. Edit the smarts-set.txt with the definition mentioned in the paper or as above
 time /usr/lib64/jvm/java-11-openjdk-11/bin/java -jar build.jar -read_Module Ocl -read_Smarts smarts-set.txt  -write_Output output.txt -read_IndexDirectory ../ChemistrySearchCLI/indexDirectory_Ocl
 
 ##################################
-// STEP 4: the output is stored in the default file "output.txt". The output format is as follow
+// STEP 4: the output is stored in the default file "output.txt". The output format is explained below
 ##################################
-the output file is formated as follows: This is the output using the module "Cdk"
+Sample output file and its format using the module "Cdk" 
 #hits FP:45632 C(F)(F) // here FP stands for fingerprint 
 <a list of the compound Ids are provided following the above line for details refer the output file>
 #hits SSS:27287 C(F)(F) // here SSS stands for substructure search or atom by atom search (Abas)
@@ -76,7 +75,7 @@ the output file is formated as follows: This is the output using the module "Cdk
 <a list of the compound Ids are provided following the above line for details refer the output file>
 
 ##################################
-// STEP 5: final results
+// STEP 5: final results: PFAS hits
 ##################################
 to get the values mentioned in the table 4, simply type "grep hits output.txt" in the terminal
 
@@ -117,6 +116,6 @@ python main.py > output.txt
 STEP 2: output format: if the query substructure is embedded in the reference compound then the compound is flagged 
 as true or else false. 
 ##################################
-grep true output.txt|wc -l gives 3,502
+grep true output.txt|wc -l gives 3,502 PFAS hits
 
 
