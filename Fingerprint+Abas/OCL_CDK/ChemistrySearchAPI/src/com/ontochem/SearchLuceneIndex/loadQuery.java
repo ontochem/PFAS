@@ -29,10 +29,6 @@ import org.openscience.cdk.silent.SilentChemObjectBuilder;
 
 import ambit2.smarts.SmartsHelper;
 import ambit2.smarts.SmartsParser;
-import chemaxon.formats.MolExporter;
-import chemaxon.formats.MolImporter;
-import chemaxon.struc.Molecule;
-import chemaxon.struc.MoleculeGraph;
 
 public class loadQuery {
 	

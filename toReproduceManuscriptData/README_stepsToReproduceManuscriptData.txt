@@ -36,26 +36,26 @@ git clone https://github.com/ontochem/PFAS.git
 ##################################
 cd PFAS/Fingerprint+Abas/OCL_CDK/ChemistrySearchCLI
 the external libraries necessary for compiling the java code is mentioned in the Manifest.txt
-compile and execute the java program using the exe.sh bash script
+compile and execute the java program using a sample bash script placed in the respective folder "exe.sh"
 
 for example: to reproduce the table 4 values for definition A,B and C using Chemistry Development Kit (CDK), edit the exe.sh script and choose the right module as shown below.
-time /usr/lib64/jvm/java-11-openjdk-11/bin/java -jar build.jar -read_Module Cdk -read_Smiles smiles-set.csv -read_IndexDirectory ./indexDirectory_Cdk
+time java -jar build.jar -read_Module Cdk -read_Smiles smiles-set.csv -read_IndexDirectory ./indexDirectory_Cdk
 
 for example: to reproduce the table 4 values for definition A,B and C using OpenChemLib (OCL), edit the exe.sh script and choose the right module as shown below.
-time /usr/lib64/jvm/java-11-openjdk-11/bin/java -jar build.jar -read_Module Ocl -read_Smiles smiles-set.csv -read_IndexDirectory ./indexDirectory_Ocl
+time java -jar build.jar -read_Module Ocl -read_Smiles smiles-set.csv -read_IndexDirectory ./indexDirectory_Ocl
 
 ##################################
 // STEP 3: search lucene index
 ##################################
 cd PFAS/Fingerprint+Abas/OCL_CDK/ChemistrySearchAPI
 the external libraries necessary for compiling the java code is mentioned in the Manifest.txt
-compile and execute the java program using the exe.sh bash script
+compile and execute the java program using a sample bash script placed in the respective folder "exe.sh"
 
 for example: to reproduce the table 4 values for definition A,B and C using Chemistry Development Kit (CDK), edit the exe.sh script and choose the right module as shown below. Edit the smarts-set.txt with the definition mentioned in the paper or as above
-time /usr/lib64/jvm/java-11-openjdk-11/bin/java -jar build.jar -read_Module Cdk -read_Smarts smarts-set.txt  -write_Output output.txt -read_IndexDirectory ../ChemistrySearchCLI/indexDirectory_Cdk
+time java -jar build.jar -read_Module Cdk -read_Smarts smarts-set.txt  -write_Output output.txt -read_IndexDirectory ../ChemistrySearchCLI/indexDirectory_Cdk
 
 for example: to reproduce the table 4 values for definition A,B and C using OpenChemLib (OCL), edit the exe.sh script and choose the right module as shown below. Edit the smarts-set.txt with the definition mentioned in the paper or as above
-time /usr/lib64/jvm/java-11-openjdk-11/bin/java -jar build.jar -read_Module Ocl -read_Smarts smarts-set.txt  -write_Output output.txt -read_IndexDirectory ../ChemistrySearchCLI/indexDirectory_Ocl
+time java -jar build.jar -read_Module Ocl -read_Smarts smarts-set.txt  -write_Output output.txt -read_IndexDirectory ../ChemistrySearchCLI/indexDirectory_Ocl
 
 ##################################
 // STEP 4: the output is stored in the default file "output.txt". The output format is explained below

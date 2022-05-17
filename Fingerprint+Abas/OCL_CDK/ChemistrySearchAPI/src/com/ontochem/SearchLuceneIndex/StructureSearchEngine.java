@@ -37,13 +37,6 @@ import ambit2.smarts.SmartsHelper;
 import ambit2.smarts.SmartsManager;
 import ambit2.smarts.SmartsParser;
 import ambit2.smarts.query.SmartsPatternCDK;
-import chemaxon.formats.MolExporter;
-import chemaxon.formats.MolImporter;
-import chemaxon.sss.SearchConstants;
-import chemaxon.sss.search.MolSearchOptions;
-import chemaxon.sss.search.StandardizedMolSearch;
-import chemaxon.struc.Molecule;
-import chemaxon.struc.MoleculeGraph;
 /*
  * Author@ Shadrack Jabes., B
  * Company@ OntoChem, GmbH
