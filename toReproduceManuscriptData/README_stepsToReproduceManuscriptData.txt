@@ -39,10 +39,10 @@ the external libraries necessary for compiling the java code is mentioned in the
 compile and execute the java program using a sample bash script placed in the respective folder "exe.sh"
 
 for example: to reproduce the table 4 values for definition A,B and C using Chemistry Development Kit (CDK), edit the exe.sh script and choose the right module as shown below.
-time java -jar build.jar -read_Module Cdk -read_Smiles smiles-set.csv -read_IndexDirectory ./indexDirectory_Cdk
+time java -jar build.jar -read_Module Cdk -read_Smiles smiles-set.csv -write_IndexDirectory ./indexDirectory_Cdk
 
 for example: to reproduce the table 4 values for definition A,B and C using OpenChemLib (OCL), edit the exe.sh script and choose the right module as shown below.
-time java -jar build.jar -read_Module Ocl -read_Smiles smiles-set.csv -read_IndexDirectory ./indexDirectory_Ocl
+time java -jar build.jar -read_Module Ocl -read_Smiles smiles-set.csv -write_IndexDirectory ./indexDirectory_Ocl
 
 ##################################
 // STEP 3: search lucene index

@@ -29,7 +29,7 @@ import picocli.CommandLine.Option;
 
 @Command(name = "Main", mixinStandardHelpOptions = true, version = "1.0", description = "Main")
 public class Main implements Callable<String> {  
-    @Option(names = {"-read_IndexDirectory"}, description = "path of Index Directory", required = true)
+    @Option(names = {"-write_IndexDirectory"}, description = "path of Index Directory", required = true)
     private String index_file_name;
     @Option(names = {"-read_Module"}, description = "read substructure module", required = true)
     private String module;

@@ -6,4 +6,4 @@ javac -d classes -cp lib/cdk-2.5.jar:lib/lucene-core-2.3.0.jar:lib/lucene-core-2
 
 jar cfm build.jar Manifest.txt -C classes com
 
-time java -jar build.jar -read_Module Ocl -read_Smiles smiles-set.csv -read_IndexDirectory ./indexDirectory
+time /usr/lib64/jvm/java-11-openjdk-11/bin/java -jar build.jar -read_Module Ocl -read_Smiles smiles-set.csv -write_IndexDirectory ./indexDirectory

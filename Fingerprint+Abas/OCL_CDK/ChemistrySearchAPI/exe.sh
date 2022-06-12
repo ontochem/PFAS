@@ -6,4 +6,4 @@ javac -d classes -cp lib/cdk-2.5.jar:lib/lucene-core-2.3.0.jar:lib/lucene-core-2
 
 jar cfm build.jar Manifest.txt -C classes com
 
-time java -jar build.jar -read_Module Ocl -read_Smarts smarts-set.txt  -write_Output output.txt -read_IndexDirectory ../ChemistrySearchCLI/indexDirectory
+time /usr/lib64/jvm/java-11-openjdk-11/bin/java -jar build.jar -read_Module Ocl -read_Smarts smarts-set.txt  -write_Output output.txt -read_IndexDirectory ../ChemistrySearchCLI/indexDirectory
